@@ -23,6 +23,9 @@
 		<label>Bairro:</label>
 		<input type="text" name="txtbairro" id="textbairro" placeholder="Informe o bairro">
 
+		<label>CEP: </label>
+		<input type="text" name="txtcep" id="textcep" placeholder="Informe o CEP">
+
 		<input type="submit" value="Enviar" name="acao">
 
 	</form>
