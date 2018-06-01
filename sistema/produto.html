@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Meus Produtos</title>
+		
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1>Meus Produtos</h1>
+		</div>
+	</header>
+	<main class="container">
+		<section>
+			<h2>Meus Produtos</h2>
+			<table>
+				<tr>
+					<th>Tipo</th>
+					<th>Sabor</th>
+					<th>Quantidade</th>
+					<th>Valor Unitário</th>
+					<th>Total Estoque</th>
+				</tr>
+				<tr class="produto">
+					<th class="info-tipo">Picolé</th>
+					<th class="info-sabor">Morango</th>
+					<th class="info-quantidade">100</th>
+					<th class="info-valor">2</th>
+					<th class="info-total"></th>		
+				</tr>
+				<tr class="produto">
+					<th class="info-tipo">Massa</th>
+					<th class="info-sabor">Açaí</th>
+					<th class="info-quantidade">50</th>
+					<th class="info-valor">2.50</th>
+					<th class="info-total"></th>		
+				</tr>
+				<tr class="produto">
+					<th class="info-tipo">Geladinho</th>
+					<th class="info-sabor">Laranja</th>
+					<th class="info-quantidade">30</th>
+					<th class="info-valor">4</th>
+					<th class="info-total"></th>		
+				</tr>
+				<tr class="produto">
+					<th class="info-tipo">Refrigerante</th>
+					<th class="info-sabor">Laranja</th>
+					<th class="info-quantidade">30</th>
+					<th class="info-valor">2</th>
+					<th class="info-total"></th>		
+				</tr>
+			</table>
+
+			<button id="calcula-valor-total" class="botao">Calcular TOTAL</button>
+		</section>
+		<section>
+			<h2>Adicionar novo produto</h2>
+			<form>
+				<fieldset>
+					<label for="nome">Tipo:</label>
+					<input id="campo-tipo" type="text" placeholder="Digite o tipo.">
+				</fieldset>
+				<fieldset>
+					<label for="sabor">Sabor:</label>
+					<input id="campo-sabor" type="text" placeholder="Digite o sabor.">
+				</fieldset>
+				<fieldset>
+					<label for="quantidade">Quantidade:</label>
+					<input id="campo-quantidade" type="number" placeholder="Digite a quantidade.">
+				</fieldset>
+				<fieldset>
+					<label for="valor">Valor unitário:</label>
+					<input id="campo-valor" type="text" placeholder="Digite o valor unitário">
+				</fieldset>
+			</form>
+
+			<button id="adicionar-produto" class="botao">Adicionar produto</button>
+		</section>
+	</main>
+
+	<script src="percorre.js"></script>
+	<script src="../js/calcula-valor-total.js"></script>
+	<script src="imprime-produto.js"></script>
+
+</body>
+</html>
