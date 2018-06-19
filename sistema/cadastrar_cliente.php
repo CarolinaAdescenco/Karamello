@@ -14,7 +14,7 @@
 
 	if (mysqli_query($conexao, $sql)) {
 		echo "Cadastro realizado com sucesso!";
-		header("location: listar_clientes.php");
+		header("location: ../listar_cliente.php");
 	}
 	else{
 		echo "Error: ". $sql ."</br>". mysqli_error($conexao);

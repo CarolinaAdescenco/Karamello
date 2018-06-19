@@ -122,7 +122,7 @@ section h2 {
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #5d1a3d;
+  color: #84020a; /*cor da fonte quando o mouse passa por cima*/
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
@@ -130,7 +130,7 @@ section h2 {
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #5d1a3d;
+  color: #ed5565;
 }
 
 #mainNav .navbar-toggler {
@@ -157,11 +157,11 @@ section h2 {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
     color: #fff;
-    background: #5d1a3d;
+    background: #ed5565;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
-    background: #5d1a3d;
+    background: #ed5565;
   }
   #mainNav.navbar-shrink {
     padding-top: 0.5rem;
@@ -320,7 +320,7 @@ header.masthead h2 {
 }
 
 .floating-label-form-group-with-focus label {
-  color: #5d1a3d;
+  color: #ed5565;
 }
 
 form .row:first-child .floating-label-form-group {
@@ -365,7 +365,7 @@ a:focus, a:hover, a:active {
 
 .bg-secondary {
   background-color:  #da4453 !important;
- /* background-color: #5d1a3d !important; alterado  */
+ /* background-color: #ed5565 !important; alterado  */
 }
 
 .text-primary {
@@ -377,13 +377,13 @@ a:focus, a:hover, a:active {
 }
 
 .btn-primary {
-  background-color: #5d1a3d;
-  border-color: #5d1a3d;
+  background-color: #ed5565;
+  border-color: #ed5565;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background-color: #5d1a3d;
-  border-color: #5d1a3d ;
+  background-color: #ed5565;
+  border-color: #ed5565 ;
 }
 
 .btn-secondary {
@@ -414,4 +414,48 @@ a:focus, a:hover, a:active {
 
 .boas-vindas{
   margin: 10rem;
+}
+
+.tabela_produto_cliente{
+  margin-top: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.cabecalho-tabela td{
+  padding: 10px;
+  background-color: #da4453;
+  text-align: center;
+}
+
+/*.tela-cadastro form, label,  input{
+  padding: 10px;
+  margin: 12px;
+
+} */
+
+.img_icon{
+  width: 24px;
+  height: 24px;
+}
+
+.tela-cadastro{
+  margin-top: 100px;
+  margin-bottom: 10px;
+  margin-left: 100px;
+}
+
+.form-atualizacao {
+  margin: auto;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.corpo{
+  text-align: center;
+}
+
+table tbody tr td {
+  text-align: center;
 }

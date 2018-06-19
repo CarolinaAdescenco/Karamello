@@ -3,7 +3,7 @@
 	require_once 'conexaobanco.php';
 
 	//consulta todos os cadastros
-	$sql = "SELECT * FROM cadastroclientes";
+	$sql = "SELECT * FROM cadastroprodutos";
 
 	$resultado = mysqli_query($conexao, $sql);
 
@@ -44,10 +44,10 @@
 </head>
 <body id="page-top">
 
-    <!-- Navigation
+    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Clientes Cadastrados</a>
+        <img src="img/Karamello/logo4.png" class="navbar-brand js-scroll-trigger" id="logo" href="#page-top">
         <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-black  rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -55,42 +55,40 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Produtos</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="listar_produto.php">Produtos</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="listar.php">Clientes</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="listar_cliente.php">Clientes</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Estoque</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Listar</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    -->
 
 
-		<table class="clientes">
+		<table class="produtos">
 			<tr class="cabecalho-tabela">
 				<td>Ações</td>
-				<td>Nome</td>
-				<td>E-mail</td>
-				<td>Telefone</td>
-				<td>Cidade</td>
-				<td>Bairro</td>
+				<td>Tipo</td>
+				<td>Sabor</td>
+				<td>Quantidade</td>
+				<td>Valor Unitário</td>
+        <td>Valor Total</td>
 			</tr>
 
-			<?php while($clientes = $resultado->fetch_assoc()): ?>
+			<?php while($produtos = $resultado->fetch_assoc()): ?>
 				<tr>
 					<td>
-						<a href="<?= "crud/form_atualiza_cliente.php?id_cliente={$clientes['id']}" ?>">Atualizar</a>
-						<a href="<?= "crud/exclui_cliente.php?id_cliente={$clientes['id']}" ?>">Excluir</a>
+						<a href="<?= "crud/form_atualiza_produto.php?id_produto={$produtos['id']}" ?>">Atualizar</a>
+						<a href="<?= "crud/exclui_produto.php?id_produto={$produtos['id']}" ?>">Excluir</a>
 					</td>
-					<td><?= $clientes['nome']; ?></td>
-					<td><?= $clientes['email']; ?></td>
-					<td><?= $clientes['telefone']; ?></td>
-					<td><?= $clientes['cidade']; ?></td>
-					<td><?= $clientes['bairro']; ?></td>
+					<td><?= $produtos['tipo']; ?></td>
+					<td><?= $produtos['sabor']; ?></td>
+					<td><?= $produtos['quantidade']; ?></td>
+					<td><?= $produtos['valorUnitario']; ?></td>
 				</tr>
 
 			<?php endwhile; ?>
@@ -99,6 +97,6 @@
 			
 		</table>
 
-	<p>Cadastrar <a href="index1.php">Novo cliente</a></p>
+	<p>Cadastrar <a href="sistema/cadastrar_produto.php">Novo produto</a></p>
 </body>
 </html>

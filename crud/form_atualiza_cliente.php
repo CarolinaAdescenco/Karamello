@@ -3,7 +3,7 @@
 	require_once '../conexaobanco.php';
 
 	//recupera o id_clientes
-	$id_clientes = $_GET["id_cliente"];
+	$id_clientes = $_POST["id_cliente"];
 
 	//consulta os dados do cliente pelo ID
 	$consulta_por_id = "select * from cadastroclientes where id = $id_clientes";
@@ -17,17 +17,21 @@
 
 	//fecha a conexão do MYSQL
 	mysqli_close($conexao);	
+
+	include_once '../head_admin.php';
 ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
+
 	<title>Manter Cliente</title>
-</head>
-<body>
-	<h1>Atualização dos dados dos clientes</h1>
-	<form action="atualizar_cliente.php" method="post">
+
+    <body>
+
+    <section class="form-atualizacao">
+    	<h1>Atualização dos dados dos clientes</h1>
+		
+		<form class="control-group" action="atualizar_cliente.php" method="post">
+		<div form-group floating-label-form-group controls mb-0 pb-2>
+			
 		<input type="hidden" name="id_clientes" value="<?= $clientes['id'] ?>">
 
 		<label>Nome:</label>
@@ -41,10 +45,16 @@
 
 		<label>Cidade:</label>
 		<input type="text" name="txtcidade" value="<?= $clientes['cidade'] ?>">
+
 		<label>Bairro:</label>
 		<input type="text" name="txtbairro" value="<?= $clientes['bairro'] ?>">
 
 		<input type="submit" value="Atualizar" name="acao">
+
+		</div>
 	</form>
+    	
+    </section>
+	
 </body>
 </html>

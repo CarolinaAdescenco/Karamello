@@ -1,67 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+  <?php 
+    include_once 'head.php';
+  ?>
 
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Karamello Sorvetes</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
-
-    <!-- Custom styles for this template -->
-    <link href="css/freelancer.css" rel="stylesheet">
-
-  </head>
+  <title>Karamello Sorvetes</title>
 
   <body id="page-top">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
-      <div class="container">
-        <img src="img/Karamello/logo4.png" class="navbar-brand js-scroll-trigger" id="logo" href="#page-top">
-        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-black  rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Produtos</a>
-            </li>
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Sobre</a>
-            </li>
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contato</a>
-            </li>
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="login_usuario.php">Login</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
 
     <!-- Header -->
     <header class="masthead bg-primary text-white text-center">
       <div class="container">
         <img class="img-fluid mb-5 d-block mx-auto" src="img/Karamello/logo4.png" alt="">
-        <h1 class="text-uppercase mb-0">Sorveteria</h1>
-        
-        
+        <h1 class="text-uppercase mb-0">Sorveteria</h1> 
       </div>
     </header>
 
@@ -201,6 +150,29 @@
         </div>
       </div>
     </section>
+
+    <!--TIRAR
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">Picolé</h2>
+              <hr class="star-dark mb-5">
+              <img class="img-fluid mb-5" src="img/Karamello/picole.PNG" alt="">
+              <p class="mb-5">Um picolé de água ou leite, é uma variedade de sorvete que consiste de um bloco de suco de fruta congelado. Um verdadeiro pedaço da fruta no palito </p>
+              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Fechar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    -->
 
     <!-- Footer -->
     <footer class="footer text-center">
